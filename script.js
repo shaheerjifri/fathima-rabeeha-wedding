@@ -54,3 +54,16 @@ setInterval(() => {
       `⏳ ${days} Days ${hours} Hours ${minutes} Minutes Left`;
   }
 }, 1000);
+const enterBtn = document.getElementById("enterBtn");
+
+if (enterBtn) {
+  enterBtn.addEventListener("click", () => {
+    const cover = document.getElementById("cover");
+
+    cover.style.opacity = "0";
+
+    setTimeout(() => {
+      cover.style.display = "none";
+    }, 1000);
+  });
+        }
