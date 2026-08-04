@@ -1,227 +1,73 @@
-body{
-  margin:0;
-  padding:0;
-  background:#f8f3eb url("file_000000005d08820b9cff64ebfb3d4c49.png") no-repeat center center fixed;
-  background-size:cover;
-  font-family:'Poppins', sans-serif;
-  color:#7a5c2e;
-  text-align:center;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
-}
-.container{
-  width:90%;
-  max-width:700px;
-  padding:40px 20px;background: rgba(255,255,255,0.75);
-border-radius: 20px;
-box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
+<h3>
+In the Name of Allah,<br>
+The Most Compassionate,<br>
+The Most Merciful
+</h3>
 
-.bismillah{
-  font-size:42px;
-  margin-bottom:15px;
-}
+<h1>
+Fathima Rabeeha
+<br>
+&
+<br>
+Muhammad Irshad
+</h1>
 
-h3{
-  font-size:22px;
-  font-weight:normal;
-  line-height:1.7;
-  margin-bottom:30px;
-}
+<p>
+You are cordially invited to join us on the joyous occasion of our Nikah.
+</p>
 
-h1{
-    font-family:'Cinzel',serif;
-    font-size:58px;
-    font-weight:700;
-    line-height:1.2;
-    margin:20px 0;
-}
+<button id="openBtn">
+💍 Enter Invitation
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+/* Cover Screen */
+#cover{
+    position:fixed;
+    inset:0;
+    background:#f8f3eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    transition:opacity 1s ease;
 }
 
-button{
-  background:#9b7428;
-  color:white;
-  border:none;
-  padding:18px 45px;
-  border-radius:40px;
-  font-size:22px;
-  cursor:pointer;
-  transition:.3s;
+.cover-content{
+    text-align:center;
 }
 
-button:hover{
-  background:#7a5c2e;
-  transform:scale(1.05);
+.ring{
+    font-size:70px;
+    animation:floatRing 2.5s ease-in-out infinite;
 }
 
-@media(max-width:768px){
-  h1{
-    font-size:42px;
-  }
+@keyframes floatRing{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+}
 
-  h3{
-    font-family:'Poppins',sans-serif;
-  }
-
-  button{
-    width:100%;
+/* Countdown */
+#countdown{
+    margin:25px 0;
+    padding:15px;
+    border-radius:15px;
+    background:rgba(166,124,45,.08);
+    color:#8b6a2f;
     font-size:20px;
-  }
-}
-.container{
-    animation:fadeUp 1s ease;
-}
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-button{
-    transition:0.3s;
-}
-
-button:hover{
-    transform:scale(1.05);
-       }
-.floral-top-left,
-.floral-top-right,
-.floral-bottom-left,
-.floral-bottom-right{
-    position:fixed;
-    width:180px;
-    height:180px;
-    background-size:contain;
-    background-repeat:no-repeat;
-    z-index:-1;
-}
-
-.floral-top-left{
-    top:0;
-    left:0;
-}
-
-.floral-top-right{
-    top:0;
-    right:0;
-    transform:scaleX(-1);
-}
-
-.floral-bottom-left{
-    bottom:0;
-    left:0;
-    transform:scaleY(-1);
-}
-
-.floral-bottom-right{
-    bottom:0;
-    right:0;
-    transform:scale(-1);
-}
-.container{
-  animation: fadeIn 1.5s ease;
-}
-
-@keyframes fadeIn{
-  from{
-    opacity:0;
-    transform:translateY(30px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
-button{
-  transition:0.3s;
-}
-
-button:hover{
-  transform:scale(1.05);
-  box-shadow:0 8px 20px rgba(0,0,0,.25);
-    }
-#countdown{
-  margin-top:25px;
-  font-size:24px;
-  font-weight:bold;
-  color:#9b7428;
-  }
-#countdown{
-    margin:30px 0;
-    font-size:18px;
     font-weight:600;
-    color:#9b7428;
-    line-height:1.6;
 }
 
-h3{
-    margin-top:40px;
-    line-height:1.5;
-      }
-button,
-a{
-    transition:0.3s ease;
-}
-
-a:hover{
-    transform:scale(1.05);
-    box-shadow:0 8px 20px rgba(155,116,40,.3);
-    }
-button:active,
-a:active{
-    transform:scale(0.96);
-}
-.petals{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    pointer-events:none;
-    overflow:hidden;
-}
-
-.petals span{
-    position:absolute;
-    top:-50px;
-    font-size:24px;
-    animation:fall 10s linear infinite;
-}
-
-.petals span:nth-child(1){left:10%;animation-delay:0s;}
-.petals span:nth-child(2){left:25%;animation-delay:2s;}
-.petals span:nth-child(3){left:40%;animation-delay:4s;}
-.petals span:nth-child(4){left:60%;animation-delay:1s;}
-.petals span:nth-child(5){left:75%;animation-delay:3s;}
-.petals span:nth-child(6){left:90%;animation-delay:5s;}
-
-@keyframes fall{
-    0%{
-        transform:translateY(-50px) rotate(0deg);
-        opacity:1;
-    }
-    100%{
-        transform:translateY(110vh) rotate(360deg);
-        opacity:0;
-    }
-      }
+/* Sparkles */
 .sparkles{
     position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    inset:0;
     pointer-events:none;
-    overflow:hidden;
 }
 
 .sparkles span{
@@ -230,7 +76,7 @@ a:active{
     height:6px;
     background:#d4af37;
     border-radius:50%;
-    box-shadow:0 0 12px #f6d365;
+    box-shadow:0 0 10px #f6d365;
     animation:sparkle 8s linear infinite;
 }
 
@@ -239,81 +85,24 @@ a:active{
 .sparkles span:nth-child(3){left:40%;animation-delay:2s;}
 .sparkles span:nth-child(4){left:55%;animation-delay:3s;}
 .sparkles span:nth-child(5){left:70%;animation-delay:4s;}
-.sparkles span:nth-child(6){left:80%;animation-delay:5s;}
-.sparkles span:nth-child(7){left:90%;animation-delay:6s;}
-.sparkles span:nth-child(8){left:50%;animation-delay:7s;}
+.sparkles span:nth-child(6){left:85%;animation-delay:5s;}
 
 @keyframes sparkle{
-    0%{
-        transform:translateY(-10vh) scale(0);
-        opacity:0;
-    }
-    20%{
-        opacity:1;
-    }
-    100%{
-        transform:translateY(110vh) scale(1.4);
-        opacity:0;
-    }
-  }
-#cover{
+    from{transform:translateY(-10vh);opacity:0;}
+    20%{opacity:1;}
+    to{transform:translateY(110vh);opacity:0;}
+}
+
+/* Petals */
+.petals{
     position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#f8f3eb;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-    transition:1s;
+    inset:0;
+    pointer-events:none;
 }
 
-.cover-content{
-    text-align:center;
-    animation:fadeIn 1.5s ease;
-}
-
-.cover-content h1{
-    font-family:'Cinzel',serif;
-    color:#8b6a2f;
-    font-size:42px;
-}
-
-.cover-content p{
-    color:#7a5c2e;
-    font-size:20px;
-    margin:20px 0;
-}
-
-#enterBtn{
-    background:#9b7428;
-    color:white;
-    border:none;
-    padding:15px 40px;
-    border-radius:40px;
-    font-size:20px;
-    cursor:pointer;
-}
-
-.ring{
-    font-size:70px;
-    animation:float 2s ease-in-out infinite;
-}
-
-@keyframes float{
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-12px);}
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:scale(.9);
-    }
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
-  }
+.petals span{
+    position:absolute;
+    top:-50px;
+    font-size:22px;
+    animation:fall 12s linear infinite;
+      }
