@@ -14,23 +14,24 @@ document.querySelector("#openBtn").addEventListener("click", () => {
 
       <p><strong>Venue:</strong> KC Auditorium, Kunnappalli</p>
 
+      <p>
+        <a href="https://maps.google.com/?q=KC+Auditorium+Kunnappalli"
+           target="_blank"
+           style="
+             display:inline-block;
+             margin-top:15px;
+             padding:12px 25px;
+             background:#9b7428;
+             color:white;
+             text-decoration:none;
+             border-radius:30px;
+             font-size:18px;">
+          📍 View Location
+        </a>
+      </p>
+
       <h3>✨ We warmly invite you to our Nikah Ceremony ✨</h3>
 
     </div>
   `;
 });
-<p>
-  <a href="https://maps.google.com/?q=KC+Auditorium+Kunnappalli"
-     target="_blank"
-     style="
-       display:inline-block;
-       margin-top:15px;
-       padding:12px 25px;
-       background:#9b7428;
-       color:white;
-       text-decoration:none;
-       border-radius:30px;
-       font-size:18px;">
-     📍 View Location
-  </a>
-</p>
