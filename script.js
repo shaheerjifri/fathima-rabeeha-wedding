@@ -29,7 +29,12 @@ document.querySelector("#openBtn").addEventListener("click", () => {
           📍 View Location
         </a>
       </p>
+</a>
+</p>
 
+<div id="countdown"></div>
+
+<h3>✨ We warmly invite you to our Nikah Ceremony ✨</h3>
       <h3>✨ We warmly invite you to our Nikah Ceremony ✨</h3>
 
     </div>
