@@ -14,7 +14,18 @@ if (enterBtn) {
 }
 
 // Open Invitation
+const openBtn = document.getElementById("openBtn");
 
+if (openBtn) {
+  openBtn.addEventListener("click", () => {
+
+    document.getElementById("cover").style.display = "none";
+    document.getElementById("invitation").style.display = "block";
+
+    startCountdown();
+
+  });
+}
 
 // Countdown
 function startCountdown(){
@@ -31,19 +42,7 @@ function startCountdown(){
 
       document.getElementById("countdown").innerHTML =
       "🎉 Today is the Wedding Day";
-// Open Invitation
-const openBtn = document.getElementById("openBtn");
 
-if (openBtn) {
-  openBtn.addEventListener("click", () => {
-
-    document.getElementById("cover").style.display = "none";
-    document.getElementById("invitation").style.display = "block";
-
-    startCountdown();
-
-  });
-      }
       clearInterval(timer);
 
       return;
