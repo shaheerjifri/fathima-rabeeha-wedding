@@ -29,8 +29,6 @@ document.querySelector("#openBtn").addEventListener("click", () => {
           📍 View Location
         </a>
       </p>
-</a>
-</p>
 
 <div id="countdown"></div>
 
