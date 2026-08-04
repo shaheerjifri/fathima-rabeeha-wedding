@@ -1,7 +1,10 @@
 body{
   margin:0;
   padding:0;
-  background:#f8f3eb;
+  background:
+url("https://www.transparenttextures.com/patterns/cream-paper.png"),
+#f8f3eb;
+background-repeat:repeat;
   font-family: 'Poppins', sans-serif;
   color:#7a5c2e;
   text-align:center;
@@ -14,7 +17,9 @@ body{
 .container{
   width:90%;
   max-width:700px;
-  padding:40px 20px;
+  padding:40px 20px;background: rgba(255,255,255,0.75);
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .bismillah{
