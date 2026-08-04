@@ -95,3 +95,37 @@ button{
 button:hover{
     transform:scale(1.05);
        }
+.floral-top-left,
+.floral-top-right,
+.floral-bottom-left,
+.floral-bottom-right{
+    position:fixed;
+    width:180px;
+    height:180px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    z-index:-1;
+}
+
+.floral-top-left{
+    top:0;
+    left:0;
+}
+
+.floral-top-right{
+    top:0;
+    right:0;
+    transform:scaleX(-1);
+}
+
+.floral-bottom-left{
+    bottom:0;
+    left:0;
+    transform:scaleY(-1);
+}
+
+.floral-bottom-right{
+    bottom:0;
+    right:0;
+    transform:scale(-1);
+}
