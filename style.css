@@ -180,3 +180,37 @@ button:active,
 a:active{
     transform:scale(0.96);
 }
+.petals{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.petals span{
+    position:absolute;
+    top:-50px;
+    font-size:24px;
+    animation:fall 10s linear infinite;
+}
+
+.petals span:nth-child(1){left:10%;animation-delay:0s;}
+.petals span:nth-child(2){left:25%;animation-delay:2s;}
+.petals span:nth-child(3){left:40%;animation-delay:4s;}
+.petals span:nth-child(4){left:60%;animation-delay:1s;}
+.petals span:nth-child(5){left:75%;animation-delay:3s;}
+.petals span:nth-child(6){left:90%;animation-delay:5s;}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-50px) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(110vh) rotate(360deg);
+        opacity:0;
+    }
+      }
