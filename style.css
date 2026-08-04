@@ -2,7 +2,7 @@ body{
   margin:0;
   padding:0;
   background:#f8f3eb;
-  font-family:Georgia,serif;
+  font-family: 'Poppins', sans-serif;
   color:#7a5c2e;
   text-align:center;
   display:flex;
@@ -30,9 +30,12 @@ h3{
 }
 
 h1{
-  font-size:60px;
-  line-height:1.15;
-  margin:25px 0;
+    font-family:'Cinzel',serif;
+    font-size:58px;
+    font-weight:700;
+    line-height:1.2;
+    margin:20px 0;
+}
 }
 
 button{
@@ -57,7 +60,7 @@ button:hover{
   }
 
   h3{
-    font-size:18px;
+    font-family:'Poppins',sans-serif;
   }
 
   button{
