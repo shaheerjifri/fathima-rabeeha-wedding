@@ -14,44 +14,7 @@ if (enterBtn) {
 }
 
 // Open Invitation
-const openBtn = document.getElementById("openBtn");
 
-if (openBtn) {
-  openBtn.addEventListener("click", () => {
-
-    document.body.innerHTML = `
-      <div class="container">
-
-        <div class="bismillah">﷽</div>
-
-        <h1>Fathima Rabeeha <br> & <br> Muhammad Irshad</h1>
-
-        <p><strong>Date:</strong><br>30 August 2026 (Sunday)</p>
-
-        <p><strong>Time:</strong><br>11:00 AM – 02:00 PM</p>
-
-        <p><strong>Venue:</strong><br>KC Auditorium, Kunnappalli</p>
-
-        <p>
-          <a href="https://maps.google.com/?q=KC+Auditorium+Kunnappalli"
-          target="_blank">
-          📍 View Location
-          </a>
-        </p>
-
-        <div id="countdown"></div>
-
-        <h3>
-        ✨ We warmly invite you to our Nikah Ceremony ✨
-        </h3>
-
-      </div>
-    `;
-
-    startCountdown();
-
-  });
-}
 
 // Countdown
 function startCountdown(){
@@ -68,7 +31,19 @@ function startCountdown(){
 
       document.getElementById("countdown").innerHTML =
       "🎉 Today is the Wedding Day";
+// Open Invitation
+const openBtn = document.getElementById("openBtn");
 
+if (openBtn) {
+  openBtn.addEventListener("click", () => {
+
+    document.getElementById("cover").style.display = "none";
+    document.getElementById("invitation").style.display = "block";
+
+    startCountdown();
+
+  });
+      }
       clearInterval(timer);
 
       return;
