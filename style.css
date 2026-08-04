@@ -1,11 +1,9 @@
 body{
   margin:0;
   padding:0;
-  background:
-url("https://www.transparenttextures.com/patterns/cream-paper.png"),
-#f8f3eb;
-background-repeat:repeat;
-  font-family: 'Poppins', sans-serif;
+  background:#f8f3eb url("file_000000005d08820b9cff64ebfb3d4c49.png") no-repeat center center fixed;
+  background-size:cover;
+  font-family:'Poppins', sans-serif;
   color:#7a5c2e;
   text-align:center;
   display:flex;
@@ -13,7 +11,6 @@ background-repeat:repeat;
   align-items:center;
   min-height:100vh;
 }
-
 .container{
   width:90%;
   max-width:700px;
